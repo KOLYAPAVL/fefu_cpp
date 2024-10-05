@@ -8,8 +8,8 @@ run:
 	c++ $$module -o builds/$(var); \
 	echo "Создан бинарный файл builds/$(var)"; \
 	./builds/$(var); \
-	echo "\nВыполнение завершено"
+	echo "\nВыполнение завершено";
 
 clean:
-	rm -rf ./builds/ && \
-	mkdir builds
+	rm -rf ./builds/; \
+	mkdir builds;
